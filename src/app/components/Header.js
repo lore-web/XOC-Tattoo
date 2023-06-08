@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
 `;
 
 const PlaceholderLogo = styled.div`
-  height: 2rem;
+  height: 1.5rem;
   aspect-ratio: 1;
   background-color: aliceblue;
 `;
