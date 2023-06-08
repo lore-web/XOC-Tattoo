@@ -19,6 +19,8 @@ export default function Header({ children }) {
 }
 
 const StyledHeader = styled.header`
+  width: 100%;
+  padding: 1rem;
   height: 2rem;
   display: flex;
   flex-direction: row;
