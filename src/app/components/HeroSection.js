@@ -4,23 +4,30 @@ import { styled } from "styled-components";
 export default function Hero() {
   return (
     <StyledHeroSection>
-      <h2>HERO</h2>
-      <PlaceholderHero />
+      <PlaceholderHero>
+        <p>HeroSection</p>
+        <p>This site is under construction.</p>
+      </PlaceholderHero>
     </StyledHeroSection>
   );
 }
 
-const PlaceholderHero = styled.div`
-  height: 8rem;
-  width: 20rem;
-  background-color: aliceblue;
-  padding: 1rem;
-`;
-
-const StyledHeroSection = styled.div`
+const StyledHeroSection = styled.section`
+  width: 100%;
+  height: 16rem;
+  border: solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+`;
+
+const PlaceholderHero = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
