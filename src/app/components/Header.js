@@ -26,9 +26,6 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  h1 {
-  }
 `;
 
 const PlaceholderLogo = styled.div`
