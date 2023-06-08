@@ -13,7 +13,7 @@ import Location from "./components/Location";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header></Header>
       <StyledMain>
         <HeroSection />
         <Carousel />
