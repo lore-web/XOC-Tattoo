@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Carousel from "./components/Carousel";
 import ZPattern from "./components/ZPattern";
+import Social from "./components/Social";
+import ContactForm from "./components/ContactForm";
+import Location from "./components/Location";
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
         <HeroSection />
         <Carousel />
         <ZPattern />
+        <Social />
+        <ContactForm />
+        <Location />
       </StyledMain>
       <Footer />
     </>
