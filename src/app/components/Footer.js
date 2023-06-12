@@ -1,11 +1,12 @@
 "use client";
 import { styled } from "styled-components";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <StyledFooter>
       <PagesList>
-        <li>Tattoo Studio</li>
+        <Link href={"http://www.drawinknerds.de/"}>Tattoo Studio</Link>
         <Link href={"/tattoogallery"}>Tattoo Gallerie</Link>
         <Link href={"/artgallery"}>Kunst Gallerie</Link>
         <Link href={"/about"}>About Me</Link>
