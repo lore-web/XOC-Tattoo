@@ -1,27 +1,35 @@
 "use client";
 import { styled } from "styled-components";
+import Link from "next/link";
 
 export default function ZPattern() {
   return (
     <StyledZPattern>
-      <PlaceholderImg1 />
-      <PlaceholderText1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
-        tempora totam beatae quas eligendi laborum.
-      </PlaceholderText1>
-      <PlaceholderImg2 />
-      <PlaceholderText2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
-        tempora totam beatae quas eligendi laborum.
-      </PlaceholderText2>
-      <PlaceholderImg3 />
-      <PlaceholderText3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
-        tempora totam beatae quas eligendi laborum.
-      </PlaceholderText3>
+      <Link href={"/tattoogallery"}>
+        <TattooGalleryImg />
+        <TattooGalleryText>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
+          tempora totam beatae quas eligendi laborum.
+        </TattooGalleryText>
+      </Link>
+
+      <Link href={"/artgallery"}>
+        <ArtGalleryImg />
+        <ArtGalleryText>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
+          tempora totam beatae quas eligendi laborum.
+        </ArtGalleryText>
+      </Link>
+      <Link href={"/about"}>
+        <BioPageImg />
+        <BioPageText>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
+          tempora totam beatae quas eligendi laborum.
+        </BioPageText>
+      </Link>
     </StyledZPattern>
   );
 }
@@ -41,7 +49,7 @@ const StyledZPattern = styled.div`
   padding: 1rem;
 `;
 
-const PlaceholderImg1 = styled.div`
+const TattooGalleryImg = styled.div`
   grid-area: img1;
   height: 10rem;
   aspect-ratio: 1;
@@ -49,22 +57,22 @@ const PlaceholderImg1 = styled.div`
   padding: 1rem;
 `;
 
-const PlaceholderImg2 = styled(PlaceholderImg1)`
+const ArtGalleryImg = styled(TattooGalleryImg)`
   grid-area: img2;
 `;
 
-const PlaceholderImg3 = styled(PlaceholderImg1)`
+const BioPageImg = styled(TattooGalleryImg)`
   grid-area: img3;
 `;
 
-const PlaceholderText1 = styled.p`
+const TattooGalleryText = styled.p`
   grid-area: text1;
 `;
 
-const PlaceholderText2 = styled(PlaceholderText1)`
+const ArtGalleryText = styled(TattooGalleryText)`
   grid-area: text2;
 `;
 
-const PlaceholderText3 = styled(PlaceholderText1)`
+const BioPageText = styled(TattooGalleryText)`
   grid-area: text3;
 `;
