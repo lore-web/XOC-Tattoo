@@ -6,21 +6,30 @@ export default function Footer() {
     <StyledFooter>
       <PagesList>
         <li>Tattoo Studio</li>
-        <li>Tatto Gallery</li>
-        <li>Art Gallery</li>
-        <li>About Me</li>
+        <Link href={"/tattoogallery"}>Tattoo Gallerie</Link>
+        <Link href={"/artgallery"}>Kunst Gallerie</Link>
+        <Link href={"/about"}>About Me</Link>
       </PagesList>
       <SocialsList>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>WhatsApp</li>
-        <li>E-Mail</li>
+        <Link href={"https://www.facebook.com/xoctattoo"}>Facebook</Link>
+        <Link href={"https://www.instagram.com/xoctattoo/"}>Instagram</Link>
+        <Link
+          href={
+            "https://wa.me/4915736201164?text=Hallo20%Marco20%ich20%möchte20%gerne20%einen20%Termin20%mit20%dir20%vereinbaren"
+          }
+        >
+          WhatsApp
+        </Link>
+        <Link href={"mailto://xoctattoo@gmail.com"}>E-Mail</Link>
       </SocialsList>
       <LegalList>
-        <li>Impressum</li>
-        <li>Datenschutz</li>
+        <Link href={"/imprint"}>Impressum</Link>
+        <Link href={"/dataprivacy"}>Datenschutz</Link>
       </LegalList>
-      <StyledCopyright>&copy; 2023 made by LoRe</StyledCopyright>
+      <StyledCopyright>
+        &copy; 2023 made by{" "}
+        <Link href={"https://github.com/lore-web"}>LoRe</Link>
+      </StyledCopyright>
     </StyledFooter>
   );
 }
