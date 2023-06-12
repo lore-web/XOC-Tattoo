@@ -1,11 +1,14 @@
 "use client";
 import Image from "next/image";
 import { styled } from "styled-components";
+import Link from "next/link";
 
 export default function Header({ children }) {
   return (
     <StyledHeader>
-      <PlaceholderLogo />
+      <Link href="/">
+        <PlaceholderLogo />
+      </Link>
       {children}
       <Image
         src={"/menu-outline.svg"}
@@ -32,4 +35,9 @@ const PlaceholderLogo = styled.div`
   height: 1.5rem;
   aspect-ratio: 1;
   background-color: aliceblue;
+
+  &:hover {
+    background-color: lightblue;
+    cursor: pointer;
+  }
 `;
