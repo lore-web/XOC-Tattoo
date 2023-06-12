@@ -6,26 +6,46 @@ export default function Footer() {
   return (
     <StyledFooter>
       <PagesList>
-        <Link href={"http://www.drawinknerds.de/"}>Tattoo Studio</Link>
-        <Link href={"/tattoogallery"}>Tattoo Gallerie</Link>
-        <Link href={"/artgallery"}>Kunst Gallerie</Link>
-        <Link href={"/about"}>About Me</Link>
+        <li>
+          <Link href={"http://www.drawinknerds.de/"}>Tattoo Studio</Link>
+        </li>
+        <li>
+          <Link href={"/tattoogallery"}>Tattoo Gallerie</Link>
+        </li>
+        <li>
+          <Link href={"/artgallery"}>Kunst Gallerie</Link>
+        </li>
+        <li>
+          <Link href={"/about"}>About Me</Link>
+        </li>
       </PagesList>
       <SocialsList>
-        <Link href={"https://www.facebook.com/xoctattoo"}>Facebook</Link>
-        <Link href={"https://www.instagram.com/xoctattoo/"}>Instagram</Link>
-        <Link
-          href={
-            "https://wa.me/4915736201164?text=Hallo20%Marco20%ich20%möchte20%gerne20%einen20%Termin20%mit20%dir20%vereinbaren"
-          }
-        >
-          WhatsApp
-        </Link>
-        <Link href={"mailto://xoctattoo@gmail.com"}>E-Mail</Link>
+        <li>
+          <Link href={"https://www.facebook.com/xoctattoo"}>Facebook</Link>
+        </li>
+        <li>
+          <Link href={"https://www.instagram.com/xoctattoo/"}>Instagram</Link>
+        </li>
+        <li>
+          <Link
+            href={
+              "https://wa.me/4915736201164?text=Hallo20%Marco20%ich20%möchte20%gerne20%einen20%Termin20%mit20%dir20%vereinbaren"
+            }
+          >
+            WhatsApp
+          </Link>
+        </li>
+        <li>
+          <Link href={"mailto://xoctattoo@gmail.com"}>E-Mail</Link>
+        </li>
       </SocialsList>
       <LegalList>
-        <Link href={"/imprint"}>Impressum</Link>
-        <Link href={"/dataprivacy"}>Datenschutz</Link>
+        <li>
+          <Link href={"/imprint"}>Impressum</Link>
+        </li>
+        <li>
+          <Link href={"/dataprivacy"}>Datenschutz</Link>
+        </li>
       </LegalList>
       <StyledCopyright>
         &copy; 2023 made by{" "}
