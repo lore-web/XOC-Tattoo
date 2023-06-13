@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import { styled } from "styled-components";
 import Link from "next/link";
+import BurgerMenu from "./BurgerMenu";
 
 export default function Header({ children }) {
   return (
@@ -10,13 +10,7 @@ export default function Header({ children }) {
         <PlaceholderLogo />
       </Link>
       {children}
-      <Image
-        src={"/menu-outline.svg"}
-        alt="Hamburger Menü"
-        height={32}
-        width={32}
-        priority
-      />
+      <BurgerMenu />
     </StyledHeader>
   );
 }
