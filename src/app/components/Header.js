@@ -3,14 +3,14 @@ import { styled } from "styled-components";
 import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
 
-export default function Header({ children }) {
+export default function Header({ handleDialogModal, children }) {
   return (
     <StyledHeader>
       <Link href="/">
         <PlaceholderLogo />
       </Link>
       {children}
-      <BurgerMenu />
+      <BurgerMenu handleDialogModal={handleDialogModal} />
     </StyledHeader>
   );
 }
