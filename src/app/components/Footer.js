@@ -27,11 +27,7 @@ export default function Footer() {
           <Link href={"https://www.instagram.com/xoctattoo/"}>Instagram</Link>
         </li>
         <li>
-          <Link
-            href={
-              "https://wa.me/4915736201164?text=Hallo20%Marco20%ich20%möchte20%gerne20%einen20%Termin20%mit20%dir20%vereinbaren"
-            }
-          >
+          <Link href={"https://wa.me/4915736201164?text=Hallo20%Marco"}>
             WhatsApp
           </Link>
         </li>
