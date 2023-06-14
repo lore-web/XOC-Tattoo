@@ -1,70 +1,63 @@
 "use client";
 import { styled } from "styled-components";
+import Link from "next/link";
 
 export default function ZPattern() {
   return (
     <StyledZPattern>
-      <PlaceholderImg1 />
-      <PlaceholderText1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
-        tempora totam beatae quas eligendi laborum.
-      </PlaceholderText1>
-      <PlaceholderImg2 />
-      <PlaceholderText2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
-        tempora totam beatae quas eligendi laborum.
-      </PlaceholderText2>
-      <PlaceholderImg3 />
-      <PlaceholderText3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        suscipit quos libero laborum, eveniet itaque aperiam et dolor? Error
-        tempora totam beatae quas eligendi laborum.
-      </PlaceholderText3>
+      <StyledLink href={"/tattoogallery"}>
+        <PlaceholderImg />
+        <div>
+          <h2>Tattoo Gallery</h2>
+          <p>Nadelhandwerk</p>
+        </div>
+      </StyledLink>
+      <StyledLink href={"/artgallery"}>
+        <div>
+          <h2>Art Gallery</h2>
+          <p>Kunst!Kunst!KUNST!</p>
+        </div>
+        <PlaceholderImg />
+      </StyledLink>
+      <StyledLink href={"/about"}>
+        <PlaceholderImg />
+        <div>
+          <h2>BIO</h2>
+          <p>...ein kleiner Ausblick auf meine Person</p>
+        </div>
+      </StyledLink>
     </StyledZPattern>
   );
 }
 
 const StyledZPattern = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem 1rem;
+  gap: 2rem 2rem;
   grid-template-areas:
-    "img1 text1"
-    "text2 img2"
-    "img3 text3";
+    "line1"
+    "line2"
+    "line3";
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 `;
 
-const PlaceholderImg1 = styled.div`
+const StyledLink = styled(Link)`
+  grid-area: "line1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+`;
+
+const PlaceholderImg = styled.div`
   grid-area: img1;
   height: 10rem;
   aspect-ratio: 1;
   background-color: aliceblue;
   padding: 1rem;
-`;
-
-const PlaceholderImg2 = styled(PlaceholderImg1)`
-  grid-area: img2;
-`;
-
-const PlaceholderImg3 = styled(PlaceholderImg1)`
-  grid-area: img3;
-`;
-
-const PlaceholderText1 = styled.p`
-  grid-area: text1;
-`;
-
-const PlaceholderText2 = styled(PlaceholderText1)`
-  grid-area: text2;
-`;
-
-const PlaceholderText3 = styled(PlaceholderText1)`
-  grid-area: text3;
+  border-radius: 0.25rem;
 `;
