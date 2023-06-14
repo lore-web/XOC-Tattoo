@@ -2,12 +2,18 @@
 import { styled } from "styled-components";
 import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
+import Image from "next/image";
 
 export default function Header({ handleDialogModal, children }) {
   return (
     <StyledHeader>
       <Link href="/">
-        <PlaceholderLogo />
+        <StyledLogo
+          src={"/XOCLogo.png"}
+          alt="xoc logo"
+          height={30}
+          width={30}
+        />
       </Link>
       {children}
       <BurgerMenu handleDialogModal={handleDialogModal} />
@@ -25,13 +31,6 @@ const StyledHeader = styled.header`
   align-items: center;
 `;
 
-const PlaceholderLogo = styled.div`
-  height: 1.5rem;
-  aspect-ratio: 1;
-  background-color: aliceblue;
-
-  &:hover {
-    background-color: lightblue;
-    cursor: pointer;
-  }
+const StyledLogo = styled(Image)`
+  border-radius: 50%;
 `;
