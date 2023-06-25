@@ -13,6 +13,7 @@ import Social from "./components/Social";
 import ContactForm from "./components/ContactForm";
 import Location from "./components/Location";
 import DialogModal from "./components/DialogModal";
+import BurgerMenuLinks from "./components/BurgerMenuLinks";
 
 export default function Home() {
   const [isOpened, setIsOpened] = useState(false);
@@ -29,20 +30,7 @@ export default function Home() {
             isOpened={isOpened}
             onClose={() => handleDialogModal(false)}
           >
-            <BurgerMenuLinks>
-              <li>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link href={"/tattoogallery"}>Tattoo Gallery</Link>
-              </li>
-              <li>
-                <Link href={"/artgallery"}>Art Gallery</Link>
-              </li>
-              <li>
-                <Link href={"/about"}>About Me</Link>
-              </li>
-            </BurgerMenuLinks>
+            <BurgerMenuLinks />
           </DialogModal>
         )}
 
@@ -64,14 +52,5 @@ const StyledMain = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-`;
-
-const BurgerMenuLinks = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
 `;
