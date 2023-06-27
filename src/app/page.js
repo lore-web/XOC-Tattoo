@@ -47,6 +47,7 @@ export default function Home() {
 }
 
 const StyledMain = styled.main`
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
