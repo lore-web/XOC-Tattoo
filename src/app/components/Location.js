@@ -8,7 +8,13 @@ export default function Location() {
   return (
     <LocationSection>
       <h2>Anfahrt und Öffnungszeiten</h2>
-      <LocationMap> </LocationMap>
+      <LocationMap>
+        <LocationMapImage
+          src={"/LocationMapStudio.png"}
+          alt="Tattoo Studio Karte"
+          fill
+        />
+      </LocationMap>
       <AdressContainer>
         <p>XOC @ Drawink Nerds</p>
         <p>
@@ -46,10 +52,15 @@ const LocationMap = styled.div`
   justify-self: center;
   align-self: center;
   width: 100%;
+  max-width: 26rem;
   aspect-ratio: 1;
-  background-color: aliceblue;
-  padding: 1rem;
   border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+`;
+
+const LocationMapImage = styled(Image)`
+  object-fit: cover;
 `;
 
 const AdressContainer = styled.div`
