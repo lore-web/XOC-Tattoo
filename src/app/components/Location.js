@@ -2,16 +2,17 @@
 
 import Link from "next/link";
 import { styled } from "styled-components";
+import Image from "next/image";
 
 export default function Location() {
   return (
     <LocationSection>
       <h2>Anfahrt und Öffnungszeiten</h2>
-      <PlaceholderImg />
+      <LocationMap> </LocationMap>
       <AdressContainer>
         <p>XOC @ Drawink Nerds</p>
         <p>
-          Musterstraße 1 <br /> 00000 Berlin
+          Petersburger Str. 28 <br /> 10249 Berlin
         </p>
         <Link href={"tel://+491234567890"}>+49 123 4567890</Link>
         <Link href={"mailto://email@example.com"}>email@example.com</Link>
@@ -40,7 +41,7 @@ const LocationSection = styled.section`
   }
 `;
 
-const PlaceholderImg = styled.div`
+const LocationMap = styled.div`
   grid-area: map;
   justify-self: center;
   align-self: center;
