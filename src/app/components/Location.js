@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 
 export default function Location() {
   return (
-    <section>
+    <LocationSection>
       <h2>Anfahrt und Öffnungszeiten</h2>
       <PlaceholderImg />
       <AdressContainer>
@@ -17,12 +17,34 @@ export default function Location() {
         <Link href={"mailto://email@example.com"}>email@example.com</Link>
         <button>Tattoo Studio</button>
       </AdressContainer>
-    </section>
+    </LocationSection>
   );
 }
 
+const LocationSection = styled.section`
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "map adress"
+    "map adress";
+
+  h2 {
+    grid-area: title;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+`;
+
 const PlaceholderImg = styled.div`
-  height: 10rem;
+  grid-area: map;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
   aspect-ratio: 1;
   background-color: aliceblue;
   padding: 1rem;
@@ -30,6 +52,9 @@ const PlaceholderImg = styled.div`
 `;
 
 const AdressContainer = styled.div`
+  grid-area: adress;
+  justify-self: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
