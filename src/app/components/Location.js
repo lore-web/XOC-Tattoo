@@ -13,6 +13,7 @@ export default function Location() {
           src={"/LocationMapStudio.png"}
           alt="Tattoo Studio Karte"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200) 50vw, 33vw"
         />
       </LocationMap>
       <AdressContainer>
