@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { useState } from "react";
 import { styled } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
@@ -12,8 +11,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 //Responsiveness
 const responsive = {
-  0: { items: 1 },
-  568: { items: 2 },
+  0: { items: 1, itemsFit: "contain" },
+  568: { items: 2, itemsFit: "contain" },
   1024: { items: 3, itemsFit: "contain" },
 };
 
@@ -80,6 +79,7 @@ export default function Carousel() {
         items={items}
         responsive={responsive}
         controlsStrategy="alternate"
+        disableDotsControls
       />
     </StyledCarousel>
   );
