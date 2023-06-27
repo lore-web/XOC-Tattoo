@@ -8,7 +8,11 @@ export default function Location() {
   return (
     <LocationSection>
       <h2>Anfahrt und Öffnungszeiten</h2>
-      <LocationMap>
+      <LocationMap
+        href={
+          "https://www.google.de/maps/place/Drawink+Nerds/@52.5236988,13.449067,18.58z/data=!3m1!5s0x47a84e6eed6bf0e7:0xb72dd87f0219e7f2!4m15!1m8!3m7!1s0x47a84e6eed39749f:0x7ed6c4f2eced5974!2sPetersburger+Str.+28,+10249+Berlin!3b1!8m2!3d52.5236708!4d13.4489381!16s%2Fg%2F11c4khc9sl!3m5!1s0x47a84e6eed90ed51:0x91cd300c7c30d380!8m2!3d52.5236418!4d13.4488917!16s%2Fg%2F11g69hf4tg?entry=ttu"
+        }
+      >
         <LocationMapImage
           src={"/LocationMapStudio.png"}
           alt="Tattoo Studio Karte"
@@ -54,7 +58,7 @@ const LocationSection = styled.section`
   }
 `;
 
-const LocationMap = styled.div`
+const LocationMap = styled(Link)`
   grid-area: map;
   justify-self: center;
   align-self: center;
