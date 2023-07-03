@@ -26,6 +26,7 @@ const items = [
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="2" key={uuidv4()}>
@@ -36,6 +37,7 @@ const items = [
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="3" key={uuidv4()}>
@@ -46,6 +48,7 @@ const items = [
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="4" key={uuidv4()}>
@@ -56,6 +59,7 @@ const items = [
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="5" key={uuidv4()}>
@@ -66,6 +70,7 @@ const items = [
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
 ];
