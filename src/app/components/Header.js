@@ -4,7 +4,7 @@ import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
 import Image from "next/image";
 
-export default function Header({ handleDialogModal, children }) {
+export default function Header({ children }) {
   return (
     <StyledHeader>
       <Link href="/">
@@ -16,7 +16,7 @@ export default function Header({ handleDialogModal, children }) {
         />
       </Link>
       {children}
-      <BurgerMenu handleDialogModal={handleDialogModal} />
+      <BurgerMenu />
     </StyledHeader>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import { MouseEvent, useEffect, useRef } from "react";
 import { styled } from "styled-components";
+import useStore from "@/hooks/useStore";
 
 const isClickInsideRectangle = (event, element) => {
   const rect = element.getBoundingClientRect();
@@ -13,8 +14,14 @@ const isClickInsideRectangle = (event, element) => {
   );
 };
 
-const DialogModal = ({ title, isOpened, onClose, children }) => {
+const DialogModal = ({ title, children }) => {
+  const [isOpened, handleDialogModal] = useStore((state) => [
+    state.isOpened,
+    state.handleDialogModal,
+  ]);
   const ref = useRef(null);
+
+  const onClose = () => handleDialogModal(false);
 
   useEffect(() => {
     if (isOpened) {
@@ -29,15 +36,19 @@ const DialogModal = ({ title, isOpened, onClose, children }) => {
   return (
     <StyledDialog
       ref={ref}
-      onCancel={onClose}
+      onCancel={() => handleDialogModal(false)}
       onClick={(event) =>
-        ref.current && !isClickInsideRectangle(event, ref.current) && onClose()
+        ref.current &&
+        !isClickInsideRectangle(event, ref.current) &&
+        handleDialogModal(false)
       }
       hidden
     >
       <h3>{title}</h3>
       {children}
-      <ModalCloseButton onClick={onClose}>X</ModalCloseButton>
+      <ModalCloseButton onClick={() => handleDialogModal(false)}>
+        X
+      </ModalCloseButton>
     </StyledDialog>
   );
 };
