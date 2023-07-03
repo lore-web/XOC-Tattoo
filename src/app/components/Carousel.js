@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { styled } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
-import NextImage from "next/image";
 
 //Install and import library
 //Import alice carousel CSS
