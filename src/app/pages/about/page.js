@@ -4,6 +4,7 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
+import useStore from "@/hooks/useStore";
 
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
@@ -11,10 +12,10 @@ import DialogModal from "@/app/components/DialogModal";
 import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
 
 export default function Home() {
-  const [isOpened, setIsOpened] = useState(false);
-  const handleDialogModal = (boolean) => {
-    setIsOpened(boolean);
-  };
+  const [isOpened, handleDialogModal] = useStore((state) => [
+    state.isOpened,
+    state.handleDialogModal,
+  ]);
   return (
     <>
       <Header handleDialogModal={handleDialogModal}>
