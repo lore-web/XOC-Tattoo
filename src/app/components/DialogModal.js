@@ -27,7 +27,7 @@ const DialogModal = ({ title, isOpened, onClose, children }) => {
   }, [isOpened]);
 
   return (
-    <Container
+    <StyledDialog
       ref={ref}
       onCancel={onClose}
       onClick={(event) =>
@@ -38,13 +38,13 @@ const DialogModal = ({ title, isOpened, onClose, children }) => {
       <h3>{title}</h3>
       {children}
       <ModalCloseButton onClick={onClose}>X</ModalCloseButton>
-    </Container>
+    </StyledDialog>
   );
 };
 
 export default DialogModal;
 
-const Container = styled.dialog`
+const StyledDialog = styled.dialog`
   width: 80vw;
   height: 60vh;
   position: absolute;
