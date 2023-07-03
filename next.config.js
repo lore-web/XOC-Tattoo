@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "scontent-muc2-1.xx.fbcdn.net",
+        hostname: "*",
       },
     ],
   },
