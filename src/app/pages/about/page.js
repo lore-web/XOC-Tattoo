@@ -11,7 +11,7 @@ import Footer from "@/app/components/Footer";
 import DialogModal from "@/app/components/DialogModal";
 import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
 
-export default function Home() {
+export default function AboutPage() {
   const [isOpened, handleDialogModal] = useStore((state) => [
     state.isOpened,
     state.handleDialogModal,
