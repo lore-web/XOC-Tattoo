@@ -1,8 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import useStore from "@/hooks/useStore";
 
-export default function BurgerMenu({ handleDialogModal, isOpened }) {
+export default function BurgerMenu() {
+  const [isOpened, handleDialogModal] = useStore((state) => [
+    state.isOpened,
+    state.handleDialogModal,
+  ]);
   const burgerIcon = isOpened ? "/x-mark.svg" : "/menu-outline.svg";
 
   return (

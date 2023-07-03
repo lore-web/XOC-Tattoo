@@ -23,14 +23,10 @@ export default function Home() {
   ]);
   return (
     <>
-      <Header handleDialogModal={handleDialogModal}></Header>
+      <Header />
       <StyledMain>
         {isOpened && (
-          <DialogModal
-            title="Menu"
-            isOpened={isOpened}
-            onClose={() => handleDialogModal(false)}
-          >
+          <DialogModal title="Menu">
             <BurgerMenuLinks />
           </DialogModal>
         )}
