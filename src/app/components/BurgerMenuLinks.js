@@ -11,13 +11,13 @@ export default function BurgerMenuLinks() {
         <Link href={"/"}>Home</Link>
       </li>
       <li key={uuidv4()}>
-        <Link href={"/tattoogallery"}>Tattoo Gallery</Link>
+        <Link href={"/pages/tattoogallery"}>Tattoo Gallery</Link>
       </li>
       <li key={uuidv4()}>
-        <Link href={"/artgallery"}>Art Gallery</Link>
+        <Link href={"/pages/artgallery"}>Art Gallery</Link>
       </li>
       <li key={uuidv4()}>
-        <Link href={"/about"}>About Me</Link>
+        <Link href={"/pages/about"}>About Me</Link>
       </li>
     </BurgerMenuLinkList>
   );
