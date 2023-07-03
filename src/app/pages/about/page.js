@@ -5,10 +5,10 @@ import { styled } from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import DialogModal from "../components/DialogModal";
-import BurgerMenuLinks from "../components/BurgerMenuLinks";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+import DialogModal from "@/app/components/DialogModal";
+import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
 
 export default function Home() {
   const [isOpened, setIsOpened] = useState(false);
