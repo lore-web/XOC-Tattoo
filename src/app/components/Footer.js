@@ -1,46 +1,47 @@
 "use client";
 import { styled } from "styled-components";
 import Link from "next/link";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Footer() {
   return (
     <StyledFooter>
       <PagesList>
-        <li>
+        <li key={uuidv4()}>
           <Link href={"http://www.drawinknerds.de/"}>Tattoo Studio</Link>
         </li>
-        <li>
-          <Link href={"/tattoogallery"}>Tattoo Gallerie</Link>
+        <li key={uuidv4()}>
+          <Link href={"/pages/tattoogallery"}>Tattoo Gallerie</Link>
         </li>
-        <li>
-          <Link href={"/artgallery"}>Kunst Gallerie</Link>
+        <li key={uuidv4()}>
+          <Link href={"/pages/artgallery"}>Kunst Gallerie</Link>
         </li>
-        <li>
-          <Link href={"/about"}>About Me</Link>
+        <li key={uuidv4()}>
+          <Link href={"/pages/about"}>About Me</Link>
         </li>
       </PagesList>
       <SocialsList>
-        <li>
+        <li key={uuidv4()}>
           <Link href={"https://www.facebook.com/xoctattoo"}>Facebook</Link>
         </li>
-        <li>
+        <li key={uuidv4()}>
           <Link href={"https://www.instagram.com/xoctattoo/"}>Instagram</Link>
         </li>
-        <li>
+        <li key={uuidv4()}>
           <Link href={"https://wa.me/4915736201164?text=Hallo20%Marco"}>
             WhatsApp
           </Link>
         </li>
-        <li>
+        <li key={uuidv4()}>
           <Link href={"mailto://xoctattoo@gmail.com"}>E-Mail</Link>
         </li>
       </SocialsList>
       <LegalList>
-        <li>
-          <Link href={"/imprint"}>Impressum</Link>
+        <li key={uuidv4()}>
+          <Link href={"/pages/imprint"}>Impressum</Link>
         </li>
-        <li>
-          <Link href={"/dataprivacy"}>Datenschutz</Link>
+        <li key={uuidv4()}>
+          <Link href={"/pages/dataprivacy"}>Datenschutz</Link>
         </li>
       </LegalList>
       <StyledCopyright>

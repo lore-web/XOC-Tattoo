@@ -21,51 +21,56 @@ const items = [
   <div className="item" data-value="1" key={uuidv4()}>
     <Image
       src={
-        "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/273838127_2088268231329613_8648688830811433136_n.jpg?_nc_cat=103&cb=99be929b-3346023f&ccb=1-7&_nc_sid=0debeb&_nc_ohc=5UUSGx2geJMAX9HmygC&_nc_ht=scontent-muc2-1.xx&oh=00_AfAn-xqwCbUyYEpKUgqJyIWOmEMhVWaxXJ1Yo5bTxb1e4Q&oe=649EA5D4"
+        "https://res.cloudinary.com/dfdbznn1q/image/upload/v1688404588/XOC/Placeholder/280662132_2158632450959857_3150489548953560176_n_fmcyke.jpg"
       }
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="2" key={uuidv4()}>
     <Image
       src={
-        "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/273736460_2087984128024690_6294188581684516596_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=gbSkaIhYh3IAX80lIHX&_nc_ht=scontent-muc2-1.xx&oh=00_AfCZAFZatH23H7UwKGRiPjCiNg9sx7kZinkPOjGmBd5LnA&oe=64A045C5"
+        "https://res.cloudinary.com/dfdbznn1q/image/upload/v1688404588/XOC/Placeholder/278927637_2138982719591497_1976964931288650573_n_h6yrzi.jpg"
       }
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="3" key={uuidv4()}>
     <Image
       src={
-        "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/272935173_2079035045586265_345503117771392162_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=0debeb&_nc_ohc=pcNOJOibpNMAX8i6eg5&_nc_ht=scontent-muc2-1.xx&oh=00_AfCYWDXhQigFN75IISad0s_XXF35A5hcphKneSWLdCm1xA&oe=649ECA9F"
+        "https://res.cloudinary.com/dfdbznn1q/image/upload/v1688404588/XOC/Placeholder/71392821_1373298392826604_1533973378224881664_n_vld1tu.jpg"
       }
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="4" key={uuidv4()}>
     <Image
       src={
-        "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/272893472_2079034135586356_1276778920862115589_n.jpg?_nc_cat=100&cb=99be929b-3346023f&ccb=1-7&_nc_sid=0debeb&_nc_ohc=9Bigp4UQHyMAX8lMPI1&_nc_ht=scontent-muc2-1.xx&oh=00_AfDrEgs0bF0YBfdNv9EFLcbJa9fk-2FOatE2glfN6Mf4yA&oe=649F77FA"
+        "https://res.cloudinary.com/dfdbznn1q/image/upload/v1688404588/XOC/Placeholder/273736460_2087984128024690_6294188581684516596_n_aega52.jpg"
       }
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
   <div className="item" data-value="5" key={uuidv4()}>
     <Image
       src={
-        "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/273127336_2079033555586414_701774924960010966_n.jpg?_nc_cat=105&cb=99be929b-3346023f&ccb=1-7&_nc_sid=0debeb&_nc_ohc=zYmTT71yMF0AX__3LwD&_nc_ht=scontent-muc2-1.xx&oh=00_AfCrqBrgZpAB3RpPszKG8lgLKuLExZ9rUoKrvIbPtfboIw&oe=649E9C50"
+        "https://res.cloudinary.com/dfdbznn1q/image/upload/v1688404588/XOC/Placeholder/282175954_2171539763002459_468312838304422202_n_ytghmr.jpg"
       }
       alt="platzhalter tattoo bild"
       width={375}
       height={550}
+      priority
     />
   </div>,
 ];
