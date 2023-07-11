@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Head from "next/head";
 import Footer from "@/app/components/Footer";
+import { styled } from "styled-components";
 
 export default function ImprintPage() {
   return (
@@ -15,7 +18,7 @@ export default function ImprintPage() {
         <h1>Imprint (Impressum)</h1>
         <Link href={"/"}>&larr; Home</Link>
       </header>
-      <main>
+      <StyledMain>
         <small>
           As the author of this website is a german citizen, thus this site
           itself is subject to german law, the following imprint is presented in
@@ -99,8 +102,18 @@ export default function ImprintPage() {
             https://www.e-recht24.de
           </Link>
         </p>
-      </main>
+      </StyledMain>
       <Footer />
     </>
   );
 }
+
+const StyledMain = styled.main`
+  width: 60%;
+  min-width: 375px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
