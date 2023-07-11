@@ -25,8 +25,8 @@ export default function Location() {
         <p>
           Petersburger Str. 28 <br /> 10249 Berlin
         </p>
-        <Link href={"tel://+491234567890"}>+49 123 4567890</Link>
-        <Link href={"mailto://email@example.com"}>email@example.com</Link>
+        <Link href={"tel://+491631737743"}>Placeholdernumber</Link>
+        <Link href={"mailto://xoctattoo@gmail.com"}>xoctattoo@gmail.com</Link>
         <TattooStudioLink
           href={
             "https://www.google.de/maps/place/Drawink+Nerds/@52.5236988,13.449067,18.58z/data=!3m1!5s0x47a84e6eed6bf0e7:0xb72dd87f0219e7f2!4m15!1m8!3m7!1s0x47a84e6eed39749f:0x7ed6c4f2eced5974!2sPetersburger+Str.+28,+10249+Berlin!3b1!8m2!3d52.5236708!4d13.4489381!16s%2Fg%2F11c4khc9sl!3m5!1s0x47a84e6eed90ed51:0x91cd300c7c30d380!8m2!3d52.5236418!4d13.4488917!16s%2Fg%2F11g69hf4tg?entry=ttu"
