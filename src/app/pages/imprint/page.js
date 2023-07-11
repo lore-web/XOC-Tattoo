@@ -100,6 +100,7 @@ export default function ImprintPage() {
           </Link>
         </p>
       </main>
+      <Footer />
     </>
   );
 }
