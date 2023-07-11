@@ -12,10 +12,7 @@ import DialogModal from "@/app/components/DialogModal";
 import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
 
 export default function AboutPage() {
-  const [isOpened, handleDialogModal] = useStore((state) => [
-    state.isOpened,
-    state.handleDialogModal,
-  ]);
+  const [isOpened] = useStore((state) => [state.isOpened]);
   return (
     <>
       <Header>

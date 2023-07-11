@@ -25,7 +25,7 @@ export default function Location() {
         <p>
           Petersburger Str. 28 <br /> 10249 Berlin
         </p>
-        <Link href={"tel://+491631737743"}>Placeholdernumber</Link>
+        <Link href={"tel://+4915736201164"}>+49 1573 6201164</Link>
         <Link href={"mailto://xoctattoo@gmail.com"}>xoctattoo@gmail.com</Link>
         <TattooStudioLink
           href={

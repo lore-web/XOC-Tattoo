@@ -1,11 +1,18 @@
 "use client";
+import { styled } from "styled-components";
 
 import Link from "next/link";
 import Head from "next/head";
+
 import Footer from "@/app/components/Footer";
-import { styled } from "styled-components";
+import Header from "@/app/components/Header";
+import DialogModal from "@/app/components/DialogModal";
+import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
+
+import useStore from "@/hooks/useStore";
 
 export default function ImprintPage() {
+  const [isOpened] = useStore((state) => [state.isOpened]);
   return (
     <>
       <Head>
@@ -14,11 +21,15 @@ export default function ImprintPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <h1>Imprint (Impressum)</h1>
-        <Link href={"/"}>&larr; Home</Link>
-      </header>
+      <Header>
+        <h1>Impressum</h1>
+      </Header>
       <StyledMain>
+        {isOpened && (
+          <DialogModal title="Menu">
+            <BurgerMenuLinks />
+          </DialogModal>
+        )}
         <small>
           As the author of this website is a german citizen, thus this site
           itself is subject to german law, the following imprint is presented in
@@ -35,7 +46,7 @@ export default function ImprintPage() {
         </p>
         <h3>Kontakt</h3>
         <p>
-          Telefon: <Link href={"tel:+491631737743"}>Placeholdernumber</Link>
+          Telefon: <Link href={"tel:+4915736201164"}>+49 1573 6201164</Link>
           <br />
           E-Mail:{" "}
           <Link href={"mailto:xoctattoo@gmail.com"}>xoctattoo@gmail.com</Link>
