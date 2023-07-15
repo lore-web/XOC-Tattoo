@@ -10,23 +10,19 @@ import Footer from "@/app/components/Footer";
 import DialogModal from "@/app/components/DialogModal";
 import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
 
+import useStore from "@/hooks/useStore";
+
 export default function Home() {
-  const [isOpened, setIsOpened] = useState(false);
-  const handleDialogModal = (boolean) => {
-    setIsOpened(boolean);
-  };
+  const [isOpened] = useStore((state) => [state.isOpened]);
+
   return (
     <>
-      <Header handleDialogModal={handleDialogModal}>
+      <Header>
         <h1>About Me</h1>
       </Header>
       <StyledMain>
         {isOpened && (
-          <DialogModal
-            title="Menu"
-            isOpened={isOpened}
-            onClose={() => handleDialogModal(false)}
-          >
+          <DialogModal title="Menu">
             <BurgerMenuLinks />
           </DialogModal>
         )}
