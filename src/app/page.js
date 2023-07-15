@@ -17,10 +17,7 @@ import DialogModal from "./components/DialogModal";
 import BurgerMenuLinks from "./components/BurgerMenuLinks";
 
 export default function Home() {
-  const [isOpened, handleDialogModal] = useStore((state) => [
-    state.isOpened,
-    state.handleDialogModal,
-  ]);
+  const [isOpened] = useStore((state) => [state.isOpened]);
   return (
     <>
       <Header />

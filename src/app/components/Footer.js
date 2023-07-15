@@ -11,13 +11,13 @@ export default function Footer() {
           <Link href={"http://www.drawinknerds.de/"}>Tattoo Studio</Link>
         </li>
         <li key={uuidv4()}>
-          <Link href={"/pages/tattoogallery"}>Tattoo Gallerie</Link>
+          <Link href={"/tattoogallery"}>Tattoo Gallerie</Link>
         </li>
         <li key={uuidv4()}>
-          <Link href={"/pages/artgallery"}>Kunst Gallerie</Link>
+          <Link href={"/artgallery"}>Kunst Gallerie</Link>
         </li>
         <li key={uuidv4()}>
-          <Link href={"/pages/about"}>About Me</Link>
+          <Link href={"/about"}>About Me</Link>
         </li>
       </PagesList>
       <SocialsList>
@@ -38,10 +38,10 @@ export default function Footer() {
       </SocialsList>
       <LegalList>
         <li key={uuidv4()}>
-          <Link href={"/pages/imprint"}>Impressum</Link>
+          <Link href={"/imprint"}>Impressum</Link>
         </li>
         <li key={uuidv4()}>
-          <Link href={"/pages/dataprivacy"}>Datenschutz</Link>
+          <Link href={"/dataprivacy"}>Datenschutz</Link>
         </li>
       </LegalList>
       <StyledCopyright>
