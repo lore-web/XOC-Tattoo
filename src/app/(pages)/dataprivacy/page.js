@@ -1,9 +1,17 @@
+"use client";
+import { styled } from "styled-components";
+
 import Link from "next/link";
 import Head from "next/head";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
+import DialogModal from "@/app/components/DialogModal";
+import BurgerMenuLinks from "@/app/components/BurgerMenuLinks";
+import useStore from "@/hooks/useStore";
+
 export default function DataPrivacyPage() {
+  const [isOpened] = useStore((state) => [state.isOpened]);
   return (
     <>
       <Head>
@@ -15,7 +23,12 @@ export default function DataPrivacyPage() {
       <Header>
         <h1>Datenschutz</h1>
       </Header>
-      <main>
+      <StyledMain>
+        {isOpened && (
+          <DialogModal title="Menu">
+            <BurgerMenuLinks />
+          </DialogModal>
+        )}
         <small>
           As the author of this website is a german citizen, thus this site
           itself is subject to german law, the following imprint is presented in
@@ -163,6 +176,8 @@ export default function DataPrivacyPage() {
           Website ist:
         </p>
         <p>
+          <StyledLink href={"https://github.com/lore-web"}>Lore Web</StyledLink>{" "}
+          <br />
           Long Ha Hoang
           <br />
           Kiebitzweg 4<br />
@@ -173,7 +188,7 @@ export default function DataPrivacyPage() {
           <Link href={"tel:+49(0)81614925525"}>+49 (0) 8161 4925525</Link>
           <br />
           E-Mail:{" "}
-          <Link href={"mailto:long@ha.mozmail.com"}>long@ha.mozmail.com</Link>
+          <Link href={"mailto:long@lore-web.dev"}>long@lore-web.dev</Link>
           <br />
         </p>
         <p>
@@ -339,8 +354,22 @@ export default function DataPrivacyPage() {
             eRecht24
           </Link>
         </p>
-      </main>
+      </StyledMain>
       <Footer />
     </>
   );
 }
+
+const StyledMain = styled.main`
+  width: 60%;
+  min-width: 375px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: underline;
+`;
