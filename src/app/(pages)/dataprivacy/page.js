@@ -31,8 +31,8 @@ export default function DataPrivacyPage() {
         )}
         <small>
           As the author of this website is a german citizen, thus this site
-          itself is subject to german law, the following imprint is presented in
-          german.
+          itself is subject to german law, the following dataprivacy page is
+          presented in german.
         </small>
         <h2>1. Datenschutz auf einen Blick</h2>
         <h2>Allgemeine Hinweise</h2>
