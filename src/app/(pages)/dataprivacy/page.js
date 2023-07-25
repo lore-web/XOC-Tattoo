@@ -132,7 +132,7 @@ export default function DataPrivacyPage() {
           Erfüllung seiner Leistungspflichten erforderlich ist und unsere
           Weisungen in Bezug auf diese Daten befolgen.
         </p>
-        <h4>Github Pages</h4>
+        <h4>Hostinger Webhosting</h4>
         <p>
           Diese Website wird auf Servern von{" "}
           <Link href={"https://www.hostinger.com/"} rel="noopener nofollow">
