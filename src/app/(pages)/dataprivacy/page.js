@@ -366,8 +366,9 @@ const StyledMain = styled.main`
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 1rem;
 `;
 
 const StyledLink = styled(Link)`
