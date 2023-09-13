@@ -1,3 +1,5 @@
+import artGalleryDB from "@/lib/artGalleryDB.dev.json";
+
 export default function TattooPage() {
-  return <h1>Tattoo Gallerie</h1>;
+  return console.log(artGalleryDB);
 }
