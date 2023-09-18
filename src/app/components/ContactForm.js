@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function ContactForm() {
   return (
     <StyledSection>
-      <StyledButton>Kontaktformular</StyledButton>
+      <StyledLink href={"/"}>Kontaktformular</StyledLink>
     </StyledSection>
   );
 }
@@ -20,4 +21,10 @@ const StyledSection = styled.section`
 const StyledButton = styled.button`
   width: 30%;
   height: 100%;
+`;
+
+const StyledLink = styled(Link)`
+  border: solid 1px white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 `;
